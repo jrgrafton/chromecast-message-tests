@@ -8,6 +8,9 @@ window.onload = function() {
 		console.info = function() {}
 	}
 
+	// Start UI
+	window.ui = new UI();
+
 	// Load tests or receiver code depending on environment
 	if(navigator.userAgent.indexOf("armv7l") === -1) {
 		window.e2eTests = new E2ETests();
